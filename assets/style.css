@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+}
+.logo{
+    cursor: pointer;
+    width: 140px;
+}
+.nav-links li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    color: #FFF;
+    text-decoration: none;
+}
+.register-btn{
+    background: #FFF;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+.container{
+    padding: 0px 7%;
+}
+.header h1{
+    font-size: 4vh;
+    color: #FFF;
+    text-align: center;
+    margin-top: 22%;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.search-bar{
+    background: #FFF;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 50px;
+    padding: 6px 10px 6px 30px;
+}
+.search-bar form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.search-bar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    padding-right: 10px;
+    margin-top: 8px;
+}
+.search-bar form button {
+    border: 0;
+    outline: 0;
+    background-color: #ff5361;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+.search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+}
+.location-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
+
+/* ======================== here is exclusive section stylesheet ============================ */
+.sub-title{
+    font-size: 2.2vw;
+    margin: 50px 0px 20px;
+    font-weight: 500;
+    color: #333
+}
+.exclusives{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 30px;
+}
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.exclusives div{
+    position: relative;
+}
+.exclusives span {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* ============================ here is trendig places stylesheet ======================= */
+.trending {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 30px;
+}
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.trending h3{
+    font-weight: 600;
+    margin-top: 10px;
+}
+/* ================ here is call to action stylesheet ================= */
+.cta{
+    background-image: linear-gradient(to right, #2f2321, transparent), url(images/banner-2.png);
+    border-radius: 10px;
+    padding: 5%;
+    margin: 80px 0px;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+}
+.cta h2 {
+    font-size: 44px;
+    line-height: 45px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.cta p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+.cta-btn {
+    text-decoration: none;
+    color: #FFF;
+    background: #FF5361;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* ===================== here is story stylesheet ====================== */
+.stories{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 30px;
+}
+.stories div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.stories div {
+    position: relative;
+    text-align: center;
+}
+.stories  p{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 20px;
+}
+/* Start making money btn stylesheet */
+.make-btn {
+    font-size: 20px;
+    color: #FFF;
+    background: #FF5361;
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    max-width: 350px;
+    text-decoration: none;
+    margin: 60px auto;
+}
+
+
+/* =========================== here is about message stylesheet ======================== */
+.about-msg {
+    text-align: center;
+    margin: 80px 0px;
+    color: #333;
+    font-size: 17px;
+}
+.about-msg h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+/* ================== footer =============== */
+.footer {
+    text-align: center;
+    margin: 80px 0px 10px;
+}
+.footer a {
+    text-decoration: none;
+    color: #999;
+    margin: 0px 10px;
+    font-size: 25px;
+}
+.footer hr {
+    margin: 20px 0px;
+    height: 1px;
+    background: #999;
+    width: 100%;
+    border: 0;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    position: absolute;
+    background: #FFF;
+    width: 43px;
+    height: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+nav .fa-bars{
+    display: none;
+}
+/* ================= media query for small devices ================= */
+@media only screen and (max-width: 900px) {
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background-color: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+    }
+    .register-btn{
+        display: inline-block;
+        margin: 15px 0 30px;
+    }
+    nav .fa-bars{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #FFF;
+        font-size: 28px;
+    }
+    .active::after{
+        position: absolute;
+        background: #FFF;
+        left: -50px;
+        transform: translate(0, 50%);
+        bottom: 50%;
+    }
+    .hidemenu{
+        max-height: 300px;
+    }
+    .header h1{
+        padding-top: 100px;
+        font-size: 7vw;
+    }
+    .search-bar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .search-bar form{
+        display: block;
+    }
+    .search-bar form input{
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .sub-title{
+        font-size: 25px;
+    }
+    .cta{
+        padding: 15% 5%;
+    }
+    .cta h2{
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .cta p{
+        font-size: 14px;
+    }
+    .cta-btn{
+        border-radius: 5px;
+        padding: 5px 15px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .stories p{
+        font-size: 16px;
+    }
+    .about-msg p{
+        font-size: 15px;
+    }
+}
